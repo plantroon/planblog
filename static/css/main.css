@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 main {
     max-width: 750px;
     word-wrap: break-word;
@@ -27,30 +31,25 @@ main {
     font-weight: 300;
 }
 
-.header-text .sns-links {
-    margin: 20px auto;
+.header-text .sns-navi {
     text-align: center;
 }
 
-.header-text .sns-links a {
+.header-text .sns-navi a {
     display: inline-block;
-    margin: 0 2px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
+    width: 42px;
+    height: 42px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 24px;
     transition: color,border-color 0.1s linear;
 }
 
-.header-text .sns-links a:hover {
+.header-text .sns-navi a:hover {
     border-color: rgba(255, 255, 255, 1.0);
     color: rgba(255, 255, 255, 1.0);
 }
-
 .header-text h1 {
     margin: 0 auto;
     padding-top: 30px;
@@ -82,10 +81,6 @@ a.btn-header:hover {
     color: rgba(0, 0, 0, 1.0);
 }
 
-a.btn-subscribe {
-    right: 20px;
-}
-
 a.btn-back {
     left: 20px;
 }
@@ -95,37 +90,10 @@ a.btn-back {
 .global-footer {
     margin-top: 10px;
     padding-top: 10px;
-    max-width: 750px;
+    width: 100%;
     height: 100px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.4);
-}
-
-.global-footer .sns-links {
-    float: right;
-}
-
-.global-footer .sns-links a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    color: rgba(0, 0, 0, 0.4);
-    vertical-align: top;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
-    transition: color,border-color 0.1s linear;
-}
-
-.global-footer .sns-links a i {
-    vertical-align: middle;
-}
-
-.global-footer .sns-links a:hover {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    color: rgba(0, 0, 0, 0.7);
 }
 
 /* Article */
@@ -182,14 +150,6 @@ a.btn-back {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.author-avatar img {
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-}
-
 .author-contact {
     position: relative;
     display: inline-block;
@@ -220,7 +180,7 @@ a.btn-back {
 
 .pagination
 {
-	width: 720px;
+	width: 100%;
 	text-align: center;
 }
 

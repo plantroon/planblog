@@ -1,0 +1,37 @@
+<div class="sns-navi hidden-print">
+  <a href="{{ .Site.BaseURL }}" target="_self" title="Blog">
+  {{ with .Site.Params.avatar }}
+      <img src="{{ . }}"/>
+  {{ end }}
+  </a>
+  {{ with .Site.Params.about }}
+  <a href="{{ . }}" title="About me">
+      <i class="fa fa-user"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.email }}
+  <a href="mailto:{{ . }}" target="_self" title="E-mail me">
+    <i class="fa fa-envelope"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.github }}
+  <a href="https://github.com/{{ . }}" target="_blank" title="Github">
+    <i class="fa fa-github"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.youtube }}
+  <a href="https://youtube.com/{{ . }}" target="_blank" title="Youtube">
+    <i class="fa fa-youtube"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.twitter }}
+  <a href="https://twitter.com/{{ . }}" target="_blank" title="Twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.steam }}
+  <a href="https://steamcommunity.com/id/{{ . }}" target="_blank" title="Steam">
+    <i class="fa fa-steam"></i>
+  </a>
+  {{ end }}
+</div>

@@ -34,10 +34,18 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" />
-  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.png" />
   {{ if eq .URL "/" }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{ end }}
+  {{ with .Site.Params.google_adsense }}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "{{ . }}",
+    enable_page_level_ads: true
+    });
+  </script>
   {{ end }}
 </head>
 <body>
@@ -49,19 +57,16 @@
         {{ . }}
       </div>
       {{ end }}
-      {{ partial "link.html" . }}
-      {{ if ne .URL "/" }}
-      <a href="{{ .Site.BaseURL }}" class="btn-header btn-back hidden-xs">
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
-        &nbsp;Home
-      </a>
-      {{ end }}
-      {{ with .RSSLink }}
-      <a href="{{ . }}" class="btn-header btn-subscribe hidden-xs">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-        &nbsp;Subscribe
-      </a>
-      {{ end }}
+      {{ partial "navi.html" . }}
     </section>
   </header>
   <main class="container">
+  {{ with .Site.Params.google_adsense }}
+  <ins  class="adsbygoogle" 
+        style="display:block" 
+        data-ad-client="{{ . }}" 
+        data-ad-slot="8599575024" 
+        data-ad-format="auto">
+  </ins> 
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+  {{ end }} 

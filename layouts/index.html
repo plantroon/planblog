@@ -6,7 +6,7 @@
   {{ end }}
   {{ .Render "li" }}
   {{ end }}
+  {{ partial "pagination.html" .Paginator }}
 </div>
-{{ partial "pagination.html" .Paginator }}
 {{ partial "footer.html" . }}
 
