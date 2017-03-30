@@ -31,14 +31,14 @@ main {
     font-weight: 300;
 }
 
-.header-text .sns-navi {
+.header-text .sns-social {
     text-align: center;
 }
 
-.header-text .sns-navi a {
+.header-text .sns-social a {
     display: inline-block;
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 24px;
@@ -46,7 +46,7 @@ main {
     transition: color,border-color 0.1s linear;
 }
 
-.header-text .sns-navi a:hover {
+.header-text .sns-social a:hover {
     border-color: rgba(255, 255, 255, 1.0);
     color: rgba(255, 255, 255, 1.0);
 }
@@ -66,8 +66,6 @@ a.btn-header {
     position: absolute;
     top: 20px;
     padding: 7px 16px;
-    border: 1px solid rgba(255, 255, 255, 1.0);
-    border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
@@ -81,10 +79,6 @@ a.btn-header:hover {
     color: rgba(0, 0, 0, 1.0);
 }
 
-a.btn-back {
-    left: 20px;
-}
-
 /* Footer */
 
 .global-footer {
@@ -94,6 +88,7 @@ a.btn-back {
     height: 100px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 /* Article */
@@ -113,11 +108,9 @@ a.btn-back {
 
 .post-tag a {
     padding: 0 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
-    transition: color,border-color,background-color 0.1s linear;
+    transition: color,background-color 0.1s linear;
 }
 
 .post-tag a:hover {
@@ -135,70 +128,16 @@ a.btn-back {
     text-align: center;
 }
 
-.author-info {
-    padding: 25px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.author-name {
-    margin: 0 0 5px 0;
-    font-size: 30px;
-}
-
-.author-bio {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.author-contact {
-    position: relative;
-    display: inline-block;
-    padding-top: 10px;
-    height: 100px;
-    text-align: center;
-}
-
-.author-contact a {
-    display: inline-block;
-    padding: 7px 16px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 13px;
-    transition: background-color,border-color,color 0.1s linear;
-}
-
-.author-contact a:hover {
-    border: 1px solid rgba(51, 122, 182, 1.0);
-    background-color: rgba(51, 122, 183, 1.0);
-    color: rgba(255, 255, 255, 1.0);
-}
-
 /* Pagination */
-
 .pagination
 {
 	width: 100%;
-	text-align: center;
 }
-
 .older-posts,.newer-posts
 {
 	display: inline!important;
-	border: 1px solid #ddd;
-	border-radius: 15px;
 	text-decoration: none;
-	transition: border .3s ease;
-	padding: 5px 14px;
-}
-
-.page-number
-{
-	display: inline-block;
-	min-width: 100px;
-	padding: 2px 0;
+	transition: background-color .1s linear;
 }
 
 .newer-posts
@@ -213,8 +152,7 @@ a.btn-back {
 
 .older-posts:hover,.newer-posts:hover
 {
-	color: #889093;
-	border-color: #98a0a4;
+    text-decoration: none;
 }
 
 /* Override some of Bootstrap's styles */
@@ -230,6 +168,7 @@ pre code {
 }
 
 .pager li>a {
+    border: 0px;
     transition: background-color 0.1s linear;
 }
 

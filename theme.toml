@@ -1,7 +1,6 @@
-author = "Keichi Takahashi"
-modified_by = "Jakub Filo"
+author = "Jakub Filo"
 description = "Simple and clean blog theme for hugo. Added Adsense functionality, fixed unwanted scrollbar behavior and renamed for my personal use."
 license = "MIT"
 name = "planblog"
-source_repo = "git@github.com:keichi/vienna.git"
+source_repo = "git@github.com:plantroon/planblog.git"
 tags = ["blog", "tags", "bootstrap"]

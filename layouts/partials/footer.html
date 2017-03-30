@@ -1,5 +1,14 @@
+  {{ with .Site.Params.google_adsense }}
+  <ins  class="adsbygoogle" 
+        style="display:block" 
+        data-ad-client="{{ . }}" 
+        data-ad-slot="8599575024" 
+        data-ad-format="auto">
+  </ins> 
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+  {{ end }} 
   <footer class="container global-footer">
-    <div class="copyright-note pull-left">
+    <div class="copyright-note">
       {{ .Site.Copyright | safeHTML }}
     </div>
   </footer>
