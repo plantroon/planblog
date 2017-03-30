@@ -1,9 +1,7 @@
 <div class="sns-social hidden-print">
-  {{ with .RSSLink }}
-  <a href="{{ . }}" title="Subscribe">
+  <a href="/index.xml" title="Subscribe">
       <i class="fa fa-rss"></i>
   </a>
-  {{ end }}
   {{ with .Site.Params.about }}
   <a href="{{ . }}" target="_self" title="About me">
       <i class="fa fa-user"></i>
