@@ -62,22 +62,6 @@ main {
     text-decoration: none;
 }
 
-a.btn-header {
-    position: absolute;
-    top: 20px;
-    padding: 7px 16px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 1.0);
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 13px;
-    transition: color,background-color 0.1s linear;
-}
-
-a.btn-header:hover {
-    background-color: rgba(255, 255, 255, 1.0);
-    color: rgba(0, 0, 0, 1.0);
-}
 
 /* Footer */
 
@@ -178,6 +162,7 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Source Sans Pro", "Kozuka Gothic Pr6N", Meiryo, sans-serif !important;
+    font-size: 32px;
 }
 
 article section img {
