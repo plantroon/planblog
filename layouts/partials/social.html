@@ -1,7 +1,4 @@
 <div class="sns-social hidden-print">
-  <a href="/index.xml" title="Subscribe">
-      <i class="fa fa-rss"></i>
-  </a>
   {{ with .Site.Params.about }}
   <a href="{{ . }}" target="_self" title="About me">
       <i class="fa fa-user"></i>
@@ -62,4 +59,12 @@
     <i class="fa fa-key"></i>
   </a>
   {{ end }}
+  {{ with .Site.Params.trakt }}
+  <a href="https://trakt.tv/users/{{ . }}" target="_blank">
+    <i class="fa fa-film"></i>
+  </a>
+  {{ end }}
+  <a href="/index.xml" title="Subscribe">
+      <i class="fa fa-rss"></i>
+  </a>
 </div>
